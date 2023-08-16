@@ -1,0 +1,62 @@
+#About img {
+  height: 170px;
+  border-radius: 40% 40% 0 0;
+}
+/* TODO opravit border radius */
+
+#About p {
+  width: 208px;
+  flex-shrink: 0;
+  color: #174416;
+  text-align: justify;
+  font-family: Alata;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+
+.svg-about-green {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+}
+
+.svg-about-pink {
+  position: absolute;
+  top: 165px;
+  left: 20px;
+}
+
+.about-green-blur {
+  position: absolute;
+  width: 331px;
+  height: 287px;
+  flex-shrink: 0;
+
+  border-radius: 331px;
+  background: radial-gradient(
+    101.08% 101.08% at 52.64% 50.96%,
+    rgba(114, 147, 71, 0.28) 1.03%,
+    rgba(185, 210, 151, 0.29) 25.52%,
+    rgba(246, 240, 228, 0.23) 45.31%
+  );
+  filter: blur(2px);
+  backdrop-filter: blur(2px);
+
+  bottom: -40px;
+  right: -120px;
+  z-index: -1;
+}
+
+.svg-white-about {
+  position: absolute;
+  bottom: 50px;
+  right: -5px;
+}
+
+.svg-arrow-about {
+  position: absolute;
+  bottom: -20px;
+  left: 25%;
+}

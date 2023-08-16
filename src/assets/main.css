@@ -1,0 +1,47 @@
+.green-blur {
+  position: absolute;
+  width: 879px;
+  height: 881px;
+  flex-shrink: 0;
+
+  border-radius: 881px;
+  background: radial-gradient(
+    101.08% 101.08% at 52.64% 50.96%,
+    rgba(114, 147, 71, 0.63) 1.03%,
+    rgba(246, 240, 228, 0.51) 45.31%
+  );
+  filter: blur(2px);
+  backdrop-filter: blur(2px);
+
+  top: -450px;
+  left: -350px;
+  z-index: -1;
+}
+
+.svg-white-home {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.svg-gray-home {
+  position: absolute;
+
+  top: 50px;
+  right: 0;
+}
+
+.svg-pink-home {
+  position: absolute;
+
+  top: 475px;
+  left: 0;
+}
+
+.svg-arrow-home {
+  position: absolute;
+
+  top: 485px;
+  right: 30px;
+}
