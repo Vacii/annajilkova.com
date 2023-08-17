@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Main } from "./components/Main";
 import { About } from "./components/About";
+import { Portfolio } from "./components/Portfolio";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <>
       <Main />
       <About />
+      <Portfolio />
     </>
   );
 }

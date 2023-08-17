@@ -35,13 +35,13 @@
 .svg-pink-home {
   position: absolute;
 
-  top: 475px;
+  bottom: 50px;
   left: 0;
 }
 
 .svg-arrow-home {
   position: absolute;
 
-  top: 485px;
+  bottom: 80px;
   right: 30px;
 }

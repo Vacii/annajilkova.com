@@ -29,10 +29,10 @@
 }
 
 .about-green-blur {
+  overflow: hidden;
   position: absolute;
   width: 331px;
   height: 287px;
-  flex-shrink: 0;
 
   border-radius: 331px;
   background: radial-gradient(
