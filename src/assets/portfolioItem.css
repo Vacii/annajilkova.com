@@ -10,3 +10,69 @@
   width: 100%;
   max-width: 1500px;
 }
+
+.desktop-item,
+.active {
+  height: 623px;
+  width: 683px;
+  background-color: #fff;
+  border-radius: 44px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transition: transform 0.5s ease; /* Add transition property */
+}
+
+.desktop-item {
+  z-index: -1;
+  --tw-scale-x: 0.5;
+  --tw-scale-y: 0.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+  transition: transform 0.5s ease; /* Add transition property */
+}
+
+.active {
+  z-index: 1;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-blur: blur(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+  transform: translateX(0); /* Initialize to 0 for active items */
+}
+
+.left {
+  left: 0px;
+}
+
+.right {
+  right: 0px;
+}
+
+.desktop-item.left {
+  transform: translateX(-70%); /* Start off-screen to the left */
+  transition: transform 0.5s ease;
+}
+
+.desktop-item.right {
+  transform: translateX(70%); /* Start off-screen to the right */
+  transition: transform 0.5s ease;
+}
+
+.active.left {
+  transform: translateX(0); /* Move to the center when active */
+}
+
+.active.right {
+  transform: translateX(0); /* Move to the center when active */
+}
