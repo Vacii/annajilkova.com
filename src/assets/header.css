@@ -1,0 +1,16 @@
+nav a {
+  color: #6f8b86;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header svg {
+  position: absolute;
+  width: 692px;
+  height: 484px;
+  flex-shrink: 0;
+
+  left: -50px;
+}

@@ -45,3 +45,91 @@
   bottom: 80px;
   right: 30px;
 }
+
+.desktop-green-blur {
+  position: absolute;
+  border-radius: 1227px;
+  background: radial-gradient(
+    101.08% 101.08% at 52.64% 50.96%,
+    rgba(114, 147, 71, 0.63) 1.03%,
+    rgba(246, 240, 228, 0.51) 45.31%
+  );
+  filter: blur(2px);
+  backdrop-filter: blur(2px);
+
+  width: 1223px;
+  height: 1227px;
+
+  top: -700px;
+  left: 40vw;
+  flex-shrink: 0;
+  z-index: -1;
+}
+
+.desktop-pink-blur {
+  position: absolute;
+  border-radius: 1198px;
+  background: radial-gradient(
+    101.08% 101.08% at 52.64% 50.96%,
+    rgba(176, 122, 229, 0.35) 6.6%,
+    rgba(211, 181, 228, 0.26) 25.35%,
+    rgba(246, 240, 228, 0.18) 50.87%,
+    rgba(246, 240, 228, 0.18) 57.12%
+  );
+  filter: blur(2px);
+  backdrop-filter: blur(2px);
+
+  width: 1198px;
+  height: 1044px;
+  flex-shrink: 0;
+
+  top: 15vh;
+  right: 50vw;
+  flex-shrink: 0;
+  z-index: -2;
+}
+
+.content {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.first-name {
+  width: 345px;
+  height: 109px;
+  flex-shrink: 0;
+}
+
+.family-name {
+  width: 448px;
+  height: 133px;
+}
+
+.desktop-view {
+  height: 125vh;
+}
+
+@media only screen and (min-width: 1000px) {
+  .desktop-green-blur {
+    transition: left 0.5s;
+    left: 40vw;
+  }
+
+  .desktop-pink-blur {
+    transition: right 0.5s;
+    right: 55vw;
+  }
+}
+
+@media only screen and (min-height: 2000px) {
+  .desktop-pink-blur {
+    transition: top 0.5s;
+    top: 7vh;
+  }
+
+  .desktop-view {
+    height: 1500px;
+  }
+}

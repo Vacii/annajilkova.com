@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 html body {
-  padding: 0 5px 0 5px;
   font-family: "Alata", sans-serif;
   /* font-family: "Space Grotesk", sans-serif; */
   background-color: #f5eee4;

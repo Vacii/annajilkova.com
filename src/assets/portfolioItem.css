@@ -3,3 +3,10 @@
   height: 376px;
   object-fit: cover;
 }
+
+.content {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  max-width: 1500px;
+}
