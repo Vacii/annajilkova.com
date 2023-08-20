@@ -5,8 +5,8 @@ export const Main = () => {
   return (
     <>
       <main>
-        <div className="h-screen flex flex-col justify-center items-center overflow-hidden md:hidden">
-          <div className="overflow-hidden w-full">
+        <div className="h-screen flex flex-col justify-center items-center overflow-hidde relative md:hidden">
+          <div className="overflow-hidden absolute w-full h-full">
             <div className="green-blur"></div>
           </div>
           {/* White cloud */}

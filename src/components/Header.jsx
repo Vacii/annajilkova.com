@@ -3,7 +3,7 @@ import "../assets/header.css";
 
 export const Header = () => {
   return (
-    <header className="relative w-full max-w-[1500px] mx-auto">
+    <header className="hidden md:block relative w-full max-w-[1500px] mx-auto">
       <nav className="absolute top-16 left-16 flex flex-row gap-10">
         <a href="#">About</a>
         <a href="#">My work</a>
