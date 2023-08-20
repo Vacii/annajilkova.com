@@ -5,13 +5,14 @@ import {
 } from "react-icons/bs";
 import { PortfolioItem } from "./PortfolioItem";
 import "../assets/portfolioItem.css";
+import { Item } from "./Item";
 
 export const Portfolio = () => {
   const [currentActive, setCurrentActive] = useState(() => {
     return 1;
   });
   const [previousActive, setPreviousActive] = useState(() => {
-    return 1;
+    return 0;
   });
 
   const handleIncrement = () => {
@@ -28,7 +29,29 @@ export const Portfolio = () => {
     console.log("prev:" + previousActive);
     console.log("curr:" + currentActive);
   });
-  const items = [];
+  const items = [
+    {
+      header: "11111111111",
+      imgSrc: "src/assets/kundera.png",
+      imgAlt: "kundera_exhibition",
+      paragraph:
+        "Výstavu uspořádalo České centrum v Paříži ve spolupráci s Moravskou zemskou knihovnou v Brně, jíž manželé Kunderovi v roce 2020 darovali archiv a knihovnu.",
+    },
+    {
+      header: "22222222222",
+      imgSrc: "src/assets/kundera.png",
+      imgAlt: "kundera_exhibition",
+      paragraph:
+        "Výstavu uspořádalo České centrum v Paříži ve spolupráci s Moravskou zemskou knihovnou v Brně, jíž manželé Kunderovi v roce 2020 darovali archiv a knihovnu.",
+    },
+    {
+      header: "33333333333",
+      imgSrc: "src/assets/kundera.png",
+      imgAlt: "kundera_exhibition",
+      paragraph:
+        "Výstavu uspořádalo České centrum v Paříži ve spolupráci s Moravskou zemskou knihovnou v Brně, jíž manželé Kunderovi v roce 2020 darovali archiv a knihovnu.",
+    },
+  ];
   const kundera = {
     imgPath: "src/assets/kundera.png",
     imgAlt: "kundera_exhibition",
@@ -66,19 +89,7 @@ export const Portfolio = () => {
                 : "desktop-item right"
             }
           >
-            <img
-              src="src/assets/kundera.png"
-              alt=""
-              className="rounded-l-[44px]"
-            />
-            <div className="flex flex-col pt-20 px-10">
-              <h3 className="text-lg">11111111</h3>
-              <p className="text-[15px] pt-10">
-                The exhibition about the Czech writer was organised by the
-                Centre tchèque de Paris in cooperation with the Moravian Library
-                in Brno.
-              </p>
-            </div>
+            <Item props={items[0]} />
           </div>
           <div
             className={

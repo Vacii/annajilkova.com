@@ -6,6 +6,7 @@ import { Main } from "./components/Main";
 import { About } from "./components/About";
 import { Portfolio } from "./components/Portfolio";
 import { Header } from "./components/Header";
+import { Portf } from "./components/Portf";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <Main />
       <About />
       <Portfolio />
+      {/* <Portf /> */}
     </>
   );
 }
