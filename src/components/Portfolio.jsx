@@ -11,7 +11,7 @@ export const Portfolio = () => {
     return 1;
   });
   const [previousActive, setPreviousActive] = useState(() => {
-    return 1;
+    return 0;
   });
 
   const handleIncrement = () => {
@@ -46,16 +46,16 @@ export const Portfolio = () => {
       <div className="hidden md:block h-screen">
         <div className="flex flex-row justify-center items-center content relative">
           <button
-            className="absolute z-10 left-[21rem]"
+            className="absolute z-10 left-[10vw] lg:left-[20%]"
             onClick={handleDecrement}
           >
-            <BsFillArrowLeftCircleFill className="h-10 w-10 shadow-2xl text-white" />
+            <BsFillArrowLeftCircleFill className="h-10 w-10 shadow-2xl text-gray-700 hover:scale-110" />
           </button>
           <button
-            className="absolute z-10 right-[21rem]"
+            className="absolute z-10 right-[10vw] lg:right-[20%]"
             onClick={handleIncrement}
           >
-            <BsFillArrowRightCircleFill className="h-10 w-10 shadow-2xl text-white" />
+            <BsFillArrowRightCircleFill className="h-10 w-10 shadow-2xl  text-gray-700 hover:scale-110" />
           </button>
           <div
             className={

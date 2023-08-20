@@ -170,7 +170,7 @@ export const Main = () => {
           </div>
         </div>
 
-        <div className="desktop-view hidden md:block relative overflow-hidden">
+        <div className="desktop-view min-h-[1100px] hidden md:block relative overflow-hidden">
           <div className="desktop-green-blur"></div>
           <div className="desktop-pink-blur"></div>
           <div className="content">

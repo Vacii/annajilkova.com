@@ -21,10 +21,12 @@
   flex-direction: row;
   position: absolute;
   transition: transform 0.5s ease; /* Add transition property */
+  transition: transform 0.5s ease, scale 0.5s ease; /* Add scale transition */
 }
 
 .desktop-item {
   z-index: -1;
+  scale: 0.6;
   --tw-scale-x: 0.5;
   --tw-scale-y: 0.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
@@ -35,10 +37,14 @@
     var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
     var(--tw-sepia) var(--tw-drop-shadow);
   transition: transform 0.5s ease; /* Add transition property */
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(0.6) scaleY(0.6); /* Initial scale */
 }
 
 .active {
   z-index: 1;
+  scale: 1;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
@@ -48,6 +54,9 @@
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
     var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
     var(--tw-sepia) var(--tw-drop-shadow);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(1) scaleY(1); /* Active scale */
   transform: translateX(0); /* Initialize to 0 for active items */
 }
 
@@ -60,12 +69,12 @@
 }
 
 .desktop-item.left {
-  transform: translateX(-70%); /* Start off-screen to the left */
+  transform: translateX(-50%); /* Start off-screen to the left */
   transition: transform 0.5s ease;
 }
 
 .desktop-item.right {
-  transform: translateX(70%); /* Start off-screen to the right */
+  transform: translateX(50%); /* Start off-screen to the right */
   transition: transform 0.5s ease;
 }
 
