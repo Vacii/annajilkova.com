@@ -1,0 +1,93 @@
+.blob {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: -1;
+}
+
+.footer-green-blur {
+  position: absolute;
+  border-radius: 325px;
+  background: radial-gradient(
+    101.08% 101.08% at 52.64% 50.96%,
+    rgba(114, 147, 71, 0.28) 1.03%,
+    rgba(185, 210, 151, 0.29) 25.52%,
+    rgba(246, 240, 228, 0.23) 45.31%
+  );
+  filter: blur(2px);
+  backdrop-filter: blur(2px);
+
+  bottom: 240px;
+  right: -150px;
+
+  width: 325px;
+  height: 291px;
+  flex-shrink: 0;
+  z-index: -1;
+}
+
+.buttonfx {
+  color: black; /* button text color */
+  outline: none;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 0.0625em;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #b07ae5; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(
+    0,
+    -100%,
+    0
+  ); /* move elements above button so they don't appear initially */
+  transition: all 0.8s;
+}
+
+.buttonfx:before {
+  background: white; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color: white;
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.8s;
+}
+
+/* //// Slide Left  //// */
+
+.slideleft:after {
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%, 0, 0);
+}
+
+.slideleft:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.8s;
+}

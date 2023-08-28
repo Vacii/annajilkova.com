@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <>
       <section id="About">
-        <div className="h-[80vh] flex relative flex-col justify-start items-center mt-10 overflow-y-auto overflow-x-hidden md:hidden ">
+        <div className="h-[92vh] flex relative flex-col justify-start items-center pt-10 overflow-y-auto overflow-x-hidden md:hidden ">
           <div className="flex relative flex-col justify-center items-center gap-10">
             <svg
               className="svg-about-green"
