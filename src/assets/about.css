@@ -1,7 +1,11 @@
 #About {
-  padding-top: 30px;
   overflow-x: hidden;
   overflow-y: visible;
+}
+
+#About .content {
+  padding-top: 100px;
+  min-height: 800px;
 }
 
 #About img {
@@ -84,5 +88,23 @@
   max-width: 1500px;
 }
 
-.about-line {
+.desktop-about-green-blur {
+  position: absolute;
+  width: 951px;
+  height: 824px;
+  flex-shrink: 0;
+
+  border-radius: 951px;
+  background: radial-gradient(
+    101.08% 101.08% at 52.64% 50.96%,
+    rgba(114, 147, 71, 0.28) 1.03%,
+    rgba(185, 210, 151, 0.29) 25.52%,
+    rgba(246, 240, 228, 0.23) 45.31%
+  );
+  filter: blur(2px);
+  backdrop-filter: blur(2px);
+
+  left: 55vw;
+  top: -50px;
+  z-index: -1;
 }

@@ -89,6 +89,25 @@
   z-index: -2;
 }
 
+.desktop-grey-blob {
+  position: absolute;
+  width: 559px;
+  height: 291px;
+  flex-shrink: 0;
+
+  top: 30%;
+  right: 0;
+}
+
+.desktop-arrow-next {
+  position: absolute;
+  width: 206.796px;
+  height: 235.082px;
+  flex-shrink: 0;
+  bottom: 30%;
+  left: 550px;
+}
+
 .content {
   margin: auto;
   height: 100%;
@@ -108,7 +127,7 @@
 }
 
 .desktop-view {
-  height: 125vh;
+  height: 120vh;
 }
 
 @media only screen and (min-width: 1000px) {

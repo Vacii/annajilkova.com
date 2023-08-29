@@ -155,33 +155,165 @@ export const About = () => {
           </svg>
         </div>
 
-        <div className="hidden md:block h-[700px] content">
-          <div className="flex flex-row justify-center items-start">
-            <div className="flex flex-col justify-start items-center gap-10 pt-32 w-2/3">
-              <svg
-                className="md:w-2/3 lg:w-full"
-                xmlns="http://www.w3.org/2000/svg"
-                width="699"
-                height="4"
-                viewBox="0 0 699 4"
-                fill="none"
-              >
-                <path d="M0 2H699" stroke="#6F8B86" stroke-width="3" />
-              </svg>
-              <p className="md:w-2/3 about-text-desktop">
-                Hi! I am Anna and I’m energetic graphic designer with three
-                years of experience. I specialize in working with Adobe programs
-                such as Photoshop, Illustrator and InDesign, but I love to
-                expand my skills and continually learn in other programs like
-                Figma. My biggest achievement so far is the graphic design of a
-                large exhibition about the Czech writer Milan Kundera at the
-                Czech Centre in Paris.{" "}
-              </p>
+        <div className="hidden md:block h-full relative overflow-hidden">
+          <div className="content relative">
+            <div className="flex flex-row justify-center items-start">
+              <div className="flex flex-col justify-start items-center gap-10 pt-32 w-2/3 relative">
+                <svg
+                  className="md:w-2/3 lg:w-full"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="699"
+                  height="4"
+                  viewBox="0 0 699 4"
+                  fill="none"
+                >
+                  <path d="M0 2H699" stroke="#6F8B86" stroke-width="3" />
+                </svg>
+                <p className="md:w-2/3 about-text-desktop">
+                  Hi! I am Anna and I’m energetic graphic designer with three
+                  years of experience. I specialize in working with Adobe
+                  programs such as Photoshop, Illustrator and InDesign, but I
+                  love to expand my skills and continually learn in other
+                  programs like Figma. My biggest achievement so far is the
+                  graphic design of a large exhibition about the Czech writer
+                  Milan Kundera at the Czech Centre in Paris.
+                </p>
+                <a
+                  href="src/assets/jilkova-resume.pdf"
+                  target="_blank"
+                  className="text-[#B07AE5] px-5 py-2 border-2 rounded-xl border-[#B07AE5] hover:bg-[#B07AE5] hover:text-white "
+                >
+                  Download my CV
+                </a>
+              </div>
+              <div className="w-1/4 relative">
+                <img src="src/assets/picture.png" alt="" />
+                {/* green sparks */}
+                <svg
+                  className="absolute top-[-80px] left-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="166"
+                  height="157"
+                  viewBox="0 0 166 157"
+                  fill="none"
+                >
+                  <path
+                    d="M2 33.6552V61.7931"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M26.6206 56.5172C26.6206 37.5457 35.4137 21.5055 35.4137 2"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M38.931 61.7931C38.931 52.8011 44.2069 47.5446 44.2069 38.9311"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M57 72.6897C73.0708 68.7901 84.4089 48.4871 86.8965 34"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M93.4482 105.759C100.424 105.759 106.341 100.483 112.793 100.483"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M77.6206 82.8966C84.5966 82.8966 90.5137 75.8621 96.9654 75.8621"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M105.759 125.103C124.468 123.743 145.497 118.544 163.793 114.552"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M107.517 155C111.445 155 114.448 154.046 118.069 153.241"
+                    stroke="#6F8B86"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <svg
+                  className="absolute left-[-50px] top-40"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="75"
+                  height="73"
+                  viewBox="0 0 75 73"
+                  fill="none"
+                >
+                  <path
+                    d="M2 2H33.8726"
+                    stroke="#F4C7ED"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M25 48.0657C34.5099 46.1637 43.2183 33.6948 47.0657 26"
+                    stroke="#F4C7ED"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M72.8814 26C65.9364 35.5493 70.4296 57.95 70.4296 70.1313"
+                    stroke="#F4C7ED"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
             </div>
-            <div className="w-1/4">
-              <img src="src/assets/picture.png" alt="" />
-            </div>
+            <svg
+              className="absolute bottom-0 left-[60vw]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="231"
+              height="228"
+              viewBox="0 0 231 228"
+              fill="none"
+            >
+              <path
+                d="M229 2C227.432 7.75669 220.809 13.0211 217.626 18.0301C211.17 28.1889 204.195 38.0663 195.089 46.0829C184.544 55.3662 151.621 75.1769 137.061 64.4331C124.347 55.0517 131.978 38.2705 145.17 33.6384C161.832 27.7879 163.829 47.375 164.443 59.0546C166.492 98.0544 153.036 128.607 123.37 154.919C102.422 173.499 83.6135 177.85 56.4957 182.339C34.6856 185.949 11 202.29 11 226"
+                stroke="#B07AE5"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2 213C4.08093 216.959 9.9253 227.19 15.1032 225.886C20.2698 224.585 22.8191 218.612 28 218.612"
+                stroke="#B07AE5"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
           </div>
+
+          <div className="desktop-about-green-blur"></div>
+          <svg
+            className="absolute right-0 top-44 z-[-1]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="413"
+            height="295"
+            viewBox="0 0 413 295"
+            fill="none"
+          >
+            <path
+              d="M514.758 59.8653C485.254 64.1745 455.633 74.0539 425.87 75.9624C396.126 77.8697 363.598 67.8956 338.01 55.1375C326.65 49.4732 316.761 40.7609 306.668 33.5246C292.33 23.2438 276.314 15.531 259.142 9.43518C231.44 -0.398388 205.474 -3.43777 185.925 19.116C162.283 46.3908 150.635 82.638 109.368 93.4103C93.5174 97.5481 76.7695 97.9822 61.4565 103.766C41.8346 111.178 32.6559 125.529 23.692 141.814C11.8515 163.326 -9.07587 198.134 9.17714 221.062C51.8431 274.654 103.8 197.575 142.894 185.715C168.872 177.835 196.883 184.808 205.963 208.679C212.074 224.744 212.628 240.388 225.231 254.607C239.292 270.47 271.8 296.794 297.677 292.542C324.967 288.058 345.547 250.404 354.066 229.729C361.264 212.261 358.844 192.594 368.324 176.26C375.678 163.589 381.06 145.19 392.473 134.835C406.638 121.984 430.489 122.182 448.734 126.73C466.147 131.071 483.803 147.378 496.775 157.799C515.181 172.585 540.674 165.829 561 159.15"
+              stroke="#F6F0E4"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
         </div>
       </section>
     </>

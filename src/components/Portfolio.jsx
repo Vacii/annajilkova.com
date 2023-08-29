@@ -33,13 +33,13 @@ export const Portfolio = () => {
   const kundera = {
     imgPath: "src/assets/kundera.png",
     imgAlt: "kundera_exhibition",
-    headerText: "Milan Kundera: Nostalgie po Evropě",
+    headerText: "Milan Kundera: Nostalgie de l'Europe",
     subText:
       "The exhibition about the Czech writer was organised by the Centre tchèque de Paris in cooperation with the Moravian Library in Brno.",
   };
 
   const srom = {
-    imgPath: "src/assets/srom.jpeg",
+    imgPath: "src/assets/srom.jpg",
     imgAlt: "srom_webpage",
     headerText: "Leopold Šrom and Moravian RAF Pilots",
     subText:
@@ -47,7 +47,7 @@ export const Portfolio = () => {
   };
 
   const kundera_ex = {
-    imgPath: "src/assets/kundera_exhibition.jpeg",
+    imgPath: "src/assets/kundera_exhibition.jpg",
     imgAlt: "srom_webpage",
     headerText: "Milan Kundera exhibition at the World Book Fair in Prague",
     subText:
@@ -82,7 +82,7 @@ export const Portfolio = () => {
         </svg>
       </div>
 
-      <div className="hidden md:block h-screen">
+      <div className="hidden md:block h-[700px] mt-32 overflow-hidden">
         <div className="flex flex-row justify-center items-center content relative">
           <button
             className="absolute z-10 left-[10vw] lg:left-[20%]"
@@ -106,17 +106,13 @@ export const Portfolio = () => {
             }
           >
             <img
-              src="src/assets/kundera.png"
-              alt=""
+              src={kundera.imgPath}
+              alt={kundera.imgAlt}
               className="rounded-l-[44px]"
             />
             <div className="flex flex-col pt-20 px-10">
-              <h3 className="text-lg">11111111</h3>
-              <p className="text-[15px] pt-10">
-                The exhibition about the Czech writer was organised by the
-                Centre tchèque de Paris in cooperation with the Moravian Library
-                in Brno.
-              </p>
+              <h3 className="text-lg">{kundera.headerText}</h3>
+              <p className="text-[15px] pt-10">{kundera.subText}</p>
             </div>
           </div>
           <div
@@ -129,17 +125,13 @@ export const Portfolio = () => {
             }
           >
             <img
-              src="src/assets/kundera.png"
-              alt=""
+              src={srom.imgPath}
+              alt={srom.imgAlt}
               className="rounded-l-[44px]"
             />
             <div className="flex flex-col pt-20 px-10">
-              <h3 className="text-lg">222222222222</h3>
-              <p className="text-[15px] pt-10">
-                The exhibition about the Czech writer was organised by the
-                Centre tchèque de Paris in cooperation with the Moravian Library
-                in Brno.
-              </p>
+              <h3 className="text-lg">{srom.headerText}</h3>
+              <p className="text-[15px] pt-10">{srom.subText}</p>
             </div>
           </div>
 
@@ -153,17 +145,13 @@ export const Portfolio = () => {
             }
           >
             <img
-              src="src/assets/kundera.png"
-              alt=""
+              src={kundera_ex.imgPath}
+              alt={kundera_ex.imgAlt}
               className="rounded-l-[44px]"
             />
             <div className="flex flex-col pt-20 px-10">
-              <h3 className="text-lg">000000000000</h3>
-              <p className="text-[15px] pt-10">
-                The exhibition about the Czech writer was organised by the
-                Centre tchèque de Paris in cooperation with the Moravian Library
-                in Brno.
-              </p>
+              <h3 className="text-lg">{kundera_ex.headerText}</h3>
+              <p className="text-[15px] pt-10">{kundera_ex.subText}</p>
             </div>
           </div>
         </div>

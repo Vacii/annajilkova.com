@@ -174,8 +174,8 @@ export const Main = () => {
           <div className="desktop-green-blur"></div>
           <div className="desktop-pink-blur"></div>
           <div className="content">
-            <div className="flex flex-col justify-center items-start h-full ml-[20%]">
-              <div className="flex flex-col items-end mb-40 gap-8">
+            <div className="flex flex-col relative justify-center items-start h-full ml-[20%]">
+              <div className="flex flex-col  items-end mb-40 gap-8">
                 <svg
                   className="first-name"
                   xmlns="http://www.w3.org/2000/svg"
@@ -261,8 +261,47 @@ export const Main = () => {
                   </defs>
                 </svg>
               </div>
+              {/* arrow next section */}
+              <svg
+                className="desktop-arrow-next"
+                xmlns="http://www.w3.org/2000/svg"
+                width="211"
+                height="239"
+                viewBox="0 0 211 239"
+                fill="none"
+              >
+                <path
+                  d="M2 46.3837C40.496 16.0161 123.272 -36.5048 145.538 47.1709C148.773 59.33 152.678 97.7051 142.279 105.987C139.439 108.249 113.72 117.184 113.441 107.561C113.221 99.9447 124.162 92.4243 128.756 91.3672C141.465 88.4431 154.763 98.148 164.763 108.236C191.23 134.936 201.421 193.758 201.421 236.664"
+                  stroke="#B07AE5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M197 232.646C198.221 233.188 200.416 237.082 201.537 237.082C203.109 237.082 207.497 228.299 208.796 227"
+                  stroke="#B07AE5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
             </div>
           </div>
+          {/* Grey blob */}
+          <svg
+            className="desktop-grey-blob"
+            xmlns="http://www.w3.org/2000/svg"
+            width="347"
+            height="295"
+            viewBox="0 0 347 295"
+            fill="none"
+          >
+            <path
+              d="M514.758 59.8653C485.254 64.1745 455.633 74.0539 425.87 75.9624C396.126 77.8697 363.598 67.8956 338.01 55.1375C326.65 49.4732 316.761 40.7609 306.668 33.5246C292.33 23.2438 276.314 15.531 259.142 9.43517C231.44 -0.398388 205.474 -3.43777 185.925 19.116C162.283 46.3908 150.635 82.638 109.368 93.4103C93.5174 97.5481 76.7695 97.9822 61.4565 103.766C41.8346 111.178 32.6559 125.529 23.692 141.814C11.8515 163.326 -9.07587 198.134 9.17714 221.062C51.8431 274.654 103.8 197.575 142.894 185.715C168.872 177.835 196.883 184.808 205.963 208.679C212.074 224.744 212.628 240.388 225.231 254.607C239.292 270.47 271.8 296.794 297.677 292.542C324.967 288.058 345.547 250.404 354.066 229.729C361.264 212.261 358.844 192.594 368.324 176.26C375.678 163.589 381.06 145.19 392.473 134.835C406.638 121.984 430.489 122.182 448.734 126.73C466.147 131.071 483.803 147.378 496.775 157.799C515.181 172.585 540.674 165.829 561 159.15"
+              stroke="#6F8B86"
+              stroke-opacity="0.3"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
         </div>
       </main>
     </>

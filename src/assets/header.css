@@ -8,9 +8,10 @@ nav a {
 
 header svg {
   position: absolute;
-  width: 692px;
-  height: 484px;
+  width: 1633.464px;
+  height: 989.433px;
   flex-shrink: 0;
 
-  left: -50px;
+  top: -50px;
+  left: -500px;
 }

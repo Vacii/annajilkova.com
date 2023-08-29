@@ -31,7 +31,6 @@
   outline: none;
   background: transparent;
   border: none;
-  border-radius: 10px;
   letter-spacing: 0.0625em;
   padding: 10px 25px;
   text-transform: uppercase;
@@ -90,4 +89,25 @@
 .slideleft:hover:after {
   transform: translate3D(0, 0, 0);
   transition: all 0.8s;
+}
+
+.desktop-footer-green-blur {
+  position: absolute;
+  width: 1537px;
+  height: 1339px;
+  flex-shrink: 0;
+
+  border-radius: 1537px;
+  background: radial-gradient(
+    101.08% 101.08% at 52.64% 50.96%,
+    rgba(114, 147, 71, 0.28) 1.03%,
+    rgba(185, 210, 151, 0.29) 25.52%,
+    rgba(246, 240, 228, 0.23) 45.31%
+  );
+  filter: blur(2px);
+  backdrop-filter: blur(2px);
+
+  right: -300px;
+  bottom: -300px;
+  z-index: -5;
 }
