@@ -112,6 +112,13 @@ export const About = () => {
                 large exhibition about the Czech writer Milan Kundera at the
                 Czech Centre in Paris.
               </p>
+              <a
+                href="src/assets/resume.pdf"
+                target="_blank"
+                className="text-[#B07AE5] px-5 py-2 border-2 rounded-xl border-[#B07AE5] hover:bg-[#B07AE5] hover:text-white mt-5"
+              >
+                Download my CV
+              </a>
             </div>
           </div>
           <div className="about-green-blur"></div>
@@ -179,7 +186,7 @@ export const About = () => {
                   Milan Kundera at the Czech Centre in Paris.
                 </p>
                 <a
-                  href="src/assets/jilkova-resume.pdf"
+                  href="src/assets/resume.pdf"
                   target="_blank"
                   className="text-[#B07AE5] px-5 py-2 border-2 rounded-xl border-[#B07AE5] hover:bg-[#B07AE5] hover:text-white "
                 >
